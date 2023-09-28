@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #11113A;
+}
+
+#nav {
+    margin: 50px auto;
+    padding: 0 15px;
+    background-color:#16164e;
+    color: white;
+    width: 80%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 1px solid rgb(3, 62, 172);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown button {
+    background: transparent;
+    color: white;
+    border: 0;
+}
+
+.dropdown button:hover {
+    background: transparent;
+}
+
+#categorias {
+    margin: auto;
+    color: white;
+    width: 80%;
+}
+
+#categorias h5 {
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #5566B8;
+}
+
+#categorias .btn-toolbar {
+    display: flex;
+    gap: 20px;
+}
+
+#categorias .btn-toolbar button {
+    background: none;
+    border-radius: 10px;
+}
+
+#cards {
+    width: 80%;
+    margin: 80px auto;
+}
+
+#cards .card {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #5566B8;
+    min-width: 18rem;
+    display: inline-block;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+#cards .card img {
+    height: 200px;
+}
+
+#cards .card .card-ue {
+    margin-top: 40px;
+    margin-bottom: -20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+#cards .card .card-ue div {
+    display: flex;
+    gap: 5px;
+}
+
+.smallscreen {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .smallscreen {
+        display: block;
+    }
+
+    #nav .n, a, h4 {
+        display: none;
+    }
+}
